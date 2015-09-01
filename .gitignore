@@ -8,3 +8,8 @@ build.gradle
 # Ignore Gradle Start Files
 gradlew
 gradlew.bat
+
+# Ignore Idea Project Files
+*.iml
+*.ipr
+*.iws
