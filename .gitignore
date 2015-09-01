@@ -9,6 +9,10 @@ build.gradle
 gradlew
 gradlew.bat
 
+# Ignore Logs
+*.log
+*.gz
+
 # Ignore Idea Project Files
 *.iml
 *.ipr
