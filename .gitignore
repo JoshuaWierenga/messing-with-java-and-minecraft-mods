@@ -1,5 +1,6 @@
-# Ignore Gradle Folder
+# Ignore Gradle Folders
 gradle
+.gradle
 
 # Ignore Gradle Build Info
 build.gradle
