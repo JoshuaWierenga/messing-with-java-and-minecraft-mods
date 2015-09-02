@@ -1,17 +1,5 @@
-# Ignore Gradle Folders
-gradle
+# Ignore Gradle Folder
 .gradle
-
-# Ignore Gradle Build Info
-build.gradle
-
-# Ignore Gradle Start Files
-gradlew
-gradlew.bat
-
-# Ignore Logs
-*.log
-*.gz
 
 # Ignore Idea Project Files
 *.iml
@@ -19,3 +7,4 @@ gradlew.bat
 *.iws
 
 eclipse
+out
