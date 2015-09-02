@@ -1,5 +1,5 @@
 package com.joshua.testmod.proxy;
 
-public class ServerProxy
+public class ServerProxy extends CommonProxy
 {
 }
