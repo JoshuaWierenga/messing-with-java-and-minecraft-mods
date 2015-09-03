@@ -1,2 +1,4 @@
 item.testmod:TestItem.name=Test Item
 item.testmod:TestItem2.name=Test Item 2
+tile.testmod:TestBlock.name=Test Block
+tile.testmod:TestBlock2.name=Test Block 2
