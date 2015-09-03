@@ -1,6 +1,7 @@
 package com.joshua.testmod;
 
 import com.joshua.testmod.handlers.ConfigurationHandler;
+import com.joshua.testmod.init.ModItems;
 import com.joshua.testmod.proxy.IProxy;
 import com.joshua.testmod.reference.Reference;
 import com.joshua.testmod.utility.LogHelper;
@@ -26,6 +27,8 @@ public class TestMod
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
