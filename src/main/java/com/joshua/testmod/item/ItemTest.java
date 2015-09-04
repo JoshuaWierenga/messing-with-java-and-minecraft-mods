@@ -1,6 +1,6 @@
 package com.joshua.testmod.item;
 
-import com.joshua.creativetab.CreativeTabTestMod;
+import com.joshua.testmod.creativetab.CreativeTabTestMod;
 
 public class ItemTest extends ItemsTestMod
 {

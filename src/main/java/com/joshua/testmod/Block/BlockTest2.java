@@ -1,6 +1,6 @@
 package com.joshua.testmod.block;
 
-import com.joshua.creativetab.CreativeTabTestMod;
+import com.joshua.testmod.creativetab.CreativeTabTestMod;
 
 public class BlockTest2 extends BlocksTestMod
 {

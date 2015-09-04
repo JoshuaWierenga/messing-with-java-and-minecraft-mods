@@ -1,4 +1,4 @@
-package com.joshua.creativetab;
+package com.joshua.testmod.creativetab;
 
 import com.joshua.testmod.init.ModItems;
 import com.joshua.testmod.reference.Reference;
