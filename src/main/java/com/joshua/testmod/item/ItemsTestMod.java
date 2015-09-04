@@ -1,5 +1,6 @@
 package com.joshua.testmod.item;
 
+import com.joshua.testmod.creativetab.CreativeTabTestMod;
 import com.joshua.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemsTestMod extends Item
     public ItemsTestMod()
     {
         super();
+        this.setCreativeTab(CreativeTabTestMod.TestMod_TAB);
     }
 
     @Override

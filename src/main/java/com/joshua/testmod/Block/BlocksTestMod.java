@@ -1,5 +1,6 @@
 package com.joshua.testmod.block;
 
+import com.joshua.testmod.creativetab.CreativeTabTestMod;
 import com.joshua.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class BlocksTestMod extends Block
     public BlocksTestMod(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabTestMod.TestMod_TAB);
     }
 
     public BlocksTestMod()
