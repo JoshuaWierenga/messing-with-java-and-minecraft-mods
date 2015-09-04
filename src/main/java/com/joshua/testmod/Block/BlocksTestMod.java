@@ -1,4 +1,4 @@
-package com.joshua.testmod.Block;
+package com.joshua.testmod.block;
 
 import com.joshua.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;

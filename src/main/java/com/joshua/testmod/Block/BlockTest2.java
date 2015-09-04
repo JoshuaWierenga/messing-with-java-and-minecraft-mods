@@ -1,4 +1,6 @@
-package com.joshua.testmod.Block;
+package com.joshua.testmod.block;
+
+import com.joshua.creativetab.CreativeTabTestMod;
 
 public class BlockTest2 extends BlocksTestMod
 {
@@ -6,5 +8,6 @@ public class BlockTest2 extends BlocksTestMod
     {
         super();
         this.setBlockName("TestBlock2");
+        this.setCreativeTab(CreativeTabTestMod.TestMod_TAB);
     }
 }

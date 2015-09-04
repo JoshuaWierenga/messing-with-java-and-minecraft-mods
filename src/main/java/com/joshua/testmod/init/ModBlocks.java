@@ -1,8 +1,8 @@
 package com.joshua.testmod.init;
 
-import com.joshua.testmod.Block.BlockTest;
-import com.joshua.testmod.Block.BlockTest2;
-import com.joshua.testmod.Block.BlocksTestMod;
+import com.joshua.testmod.block.BlockTest;
+import com.joshua.testmod.block.BlockTest2;
+import com.joshua.testmod.block.BlocksTestMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks
