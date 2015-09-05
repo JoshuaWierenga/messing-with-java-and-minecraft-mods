@@ -3,6 +3,7 @@ package com.joshua.testmod;
 import com.joshua.testmod.handlers.ConfigurationHandler;
 import com.joshua.testmod.init.ModBlocks;
 import com.joshua.testmod.init.ModItems;
+import com.joshua.testmod.init.Recipes;
 import com.joshua.testmod.proxy.IProxy;
 import com.joshua.testmod.reference.Reference;
 import com.joshua.testmod.utility.LogHelper;
@@ -12,6 +13,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class TestMod
@@ -27,16 +29,16 @@ public class TestMod
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
-
         ModBlocks.init();
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
         LogHelper.info("Initialization Complete!");
     }
 
@@ -44,5 +46,11 @@ public class TestMod
     public void postInit(FMLPostInitializationEvent event)
     {
         LogHelper.info("Post Initialization Complete!");
+
+        for (String oreName : OreDictionary.getOreNames())
+        {
+            LogHelper.info(oreName);
+            LogHelper.info(OreDictionary.getOres(oreName));
+        }
     }
 }
