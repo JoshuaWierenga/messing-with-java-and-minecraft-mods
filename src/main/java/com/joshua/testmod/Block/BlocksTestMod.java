@@ -19,6 +19,7 @@ public class BlocksTestMod extends Block
     public BlocksTestMod()
     {
         super(Material.rock);
+        this.setCreativeTab(CreativeTabTestMod.TestMod_TAB);
     }
 
     @Override
