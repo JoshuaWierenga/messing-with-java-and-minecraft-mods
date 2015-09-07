@@ -2,6 +2,7 @@ package com.joshua.testmod;
 
 import com.joshua.testmod.handlers.ConfigurationHandler;
 import com.joshua.testmod.init.ModBlocks;
+import com.joshua.testmod.init.ModFluids;
 import com.joshua.testmod.init.ModItems;
 import com.joshua.testmod.init.Recipes;
 import com.joshua.testmod.proxy.IProxy;
@@ -32,6 +33,7 @@ public class TestMod
 
         ModItems.init();
         ModBlocks.init();
+        ModFluids.init();
         LogHelper.info("Pre Initialization Complete!");
     }
 
