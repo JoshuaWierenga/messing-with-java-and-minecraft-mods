@@ -30,7 +30,7 @@ public class BlocksTestMod extends Block
 
     @Override
     @SideOnly(Side.CLIENT)
-    public  void registerBlockIcons(IIconRegister iconRegister)
+    public void registerBlockIcons(IIconRegister iconRegister)
     {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnrwappedUnlocalizedName(this.getUnlocalizedName())));
     }

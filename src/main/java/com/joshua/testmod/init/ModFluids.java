@@ -4,7 +4,7 @@ import com.joshua.testmod.block.BlockFluidTest;
 import com.joshua.testmod.block.BlockFluidTest2;
 import com.joshua.testmod.fluid.FluidTest;
 import com.joshua.testmod.fluid.FluidTest2;
-import com.joshua.testmod.reference.Reference;
+import com.joshua.testmod.utility.LogHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -24,10 +24,13 @@ public class ModFluids
         FluidRegistry.registerFluid(testFluid2);
 
         testFluidBlock = new FluidTest(testFluid, Material.water);
-        testFluidBlock2 = new FluidTest2(testFluid2, Material.water);
+        testFluidBlock2 = new FluidTest2(testFluid2, Material.lava);
 
-        GameRegistry.registerBlock(testFluidBlock, Reference.MOD_ID + "_" + testFluidBlock.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(testFluidBlock2, Reference.MOD_ID + "_" + testFluidBlock2.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(testFluidBlock, "TestFluid");
+        GameRegistry.registerBlock(testFluidBlock2, "TestFluid2");
+
+        LogHelper.info(testFluidBlock.getUnlocalizedName());
+        LogHelper.info(testFluidBlock2.getUnlocalizedName());
 
         testFluid.setUnlocalizedName(testFluidBlock.getUnlocalizedName());
         testFluid2.setUnlocalizedName(testFluidBlock2.getUnlocalizedName());

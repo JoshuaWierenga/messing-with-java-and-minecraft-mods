@@ -50,10 +50,10 @@ public class TestMod
     {
         LogHelper.info("Post Initialization Complete!");
 
-        for (String oreName : OreDictionary.getOreNames())
+        /*for (String oreName : OreDictionary.getOreNames())
         {
             LogHelper.info(oreName);
             LogHelper.info(OreDictionary.getOres(oreName));
-        }
+        }*/
     }
 }
