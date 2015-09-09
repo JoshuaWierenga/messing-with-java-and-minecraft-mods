@@ -29,7 +29,9 @@ public class ModFluids
         GameRegistry.registerBlock(testFluidBlock, "TestFluid");
         GameRegistry.registerBlock(testFluidBlock2, "TestFluid2");
 
-        LogHelper.info(testFluidBlock.getUnlocalizedName());
-        LogHelper.info(testFluidBlock2.getUnlocalizedName());
+        LogHelper.info("FluidTest registered as : " + testFluidBlock.getUnlocalizedName());
+        LogHelper.info("FluidTest2 registered as : " + testFluidBlock2.getUnlocalizedName());
+        LogHelper.info("BlockFluidTest registered as : " +  testFluidBlock.getUnlocalizedName());
+        LogHelper.info("BlockFluidTest2 registered as : " +  testFluidBlock2.getUnlocalizedName());
     }
 }

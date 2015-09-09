@@ -1,5 +1,6 @@
 package com.joshua.testmod;
 
+import com.joshua.testmod.handlers.BucketHandler;
 import com.joshua.testmod.handlers.ConfigurationHandler;
 import com.joshua.testmod.init.ModBlocks;
 import com.joshua.testmod.init.ModFluids;
@@ -14,8 +15,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class TestMod
@@ -35,6 +35,10 @@ public class TestMod
         ModItems.init();
         ModBlocks.init();
         ModFluids.init();
+
+        BucketHandler.INSTANCE.buckets.put(ModFluids.testFluidBlock, ModItems.TestItemBucket);
+        MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
+
         LogHelper.info("Pre Initialization Complete!");
     }
 
