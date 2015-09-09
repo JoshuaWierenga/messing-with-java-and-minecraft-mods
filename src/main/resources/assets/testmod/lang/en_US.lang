@@ -1,7 +1,12 @@
+//Items
 item.testmod:TestItem.name=Test Item
 item.testmod:TestItem2.name=Test Item 2
+item.testmod:testItemBucket.name=Test Bucket
+//Blocks
 tile.testmod:TestBlock.name=Test Block
 tile.testmod:TestBlock2.name=Test Block 2
+//Fluids
 tile.testmod:testFluid.name=Test Fluid
 tile.testmod:testFluid2.name=Test Fluid 2
+//Creative Tabs
 itemGroup.testmod=Test Mod

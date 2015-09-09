@@ -31,8 +31,5 @@ public class ModFluids
 
         LogHelper.info(testFluidBlock.getUnlocalizedName());
         LogHelper.info(testFluidBlock2.getUnlocalizedName());
-
-        testFluid.setUnlocalizedName(testFluidBlock.getUnlocalizedName());
-        testFluid2.setUnlocalizedName(testFluidBlock2.getUnlocalizedName());
     }
 }
